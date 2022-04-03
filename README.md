@@ -2,8 +2,7 @@
 
 # 0x00 ALX System Engineering and DevOps 💥
 
-  >Learning bash, scripting, networking and web infra right now, been wanting to get on this. It's going to be FUN !!.
-
+   It is a repository focused on learning dev holberton-system_engineering-devops cat
 ## 0x00. Shell, basics -- Working with the shell, commands, and scripts
 
 
