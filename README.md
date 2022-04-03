@@ -1,4 +1,7 @@
-# alx-system_engineering-devops
+![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
+
+# 0x00 ALX System Engineering and DevOps 💥
+
   >Learning bash, scripting, networking and web infra right now, been wanting to get on this. It's going to be FUN !!.
 
 ## 0x00. Shell, basics -- Working with the shell, commands, and scripts
@@ -103,4 +106,4 @@ project directory]
 ## :mega: Acknowledgments
 
 * alx School (providing guidance)
-[Elias fiseha]|[Twitter](https://twitter.com/eliasfiseha1) | [GitHub](https://github.com/malu17)
+[Elias fiseha]|[Twitter](https://twitter.com/eliasfiseha1) | [GitHub](https://github.com/malu17)s
