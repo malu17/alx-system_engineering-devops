@@ -105,4 +105,4 @@ project directory]
 ## :mega: Acknowledgments
 
 * alx School (providing guidance)
-[Elias fiseha]|[Twitter](https://twitter.com/eliasfiseha1) | [GitHub](https://github.com/malu17)s
+[Elias fiseha]|[Twitter](https://twitter.com/eliasfiseha1) | [GitHub](https://github.com/malu17)
