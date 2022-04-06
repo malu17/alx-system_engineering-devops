@@ -6,3 +6,217 @@ else
 	sed -i '$ a \    StrictHostKeyChecking no' /etc/ssh/ssh_config
 	scp -i $4 $1 $3@$2:~/
 fi
+
+web two
+
+elias@elias-Satellite-C655:~/alx-system_engineering-devops/0x14-mysql$ ssh -i ~/.ssh/alx_id_rsa ubuntu@34.138.250.25
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.11.0-1020-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Apr  6 18:29:47 UTC 2022
+
+  System load:  0.09              Processes:             107
+  Usage of /:   40.4% of 9.52GB   Users logged in:       0
+  Memory usage: 66%               IPv4 address for ens4: 10.10.255.87
+  Swap usage:   0%
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+10 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+Last login: Wed Apr  6 10:34:15 2022 from 196.191.52.124
+ubuntu@1469-web-02:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CHANGE MASTER TO
+3.182',
+    ->     MASTER_USER='replica_user',
+    ->     MASTER_PASSWORD='random12345',
+    ->     MASTER_LOG_FILE='/var/log/mysql/mysql-bin.log',
+    ->     MASTER_LOG_POS=154;    ->     ->     MASTER_HOST='35.229.123.182',
+    ->     ->     MASTER_USER='replica_user',
+    ->     ->     MASTER_PASSWORD='random12345',
+    ->     ->     MASTER_LOG_FILE='/var/log/mysql/mysql-bin.log',
+    ->     ->     MASTER_LOG_FILE='/var/log/mysql/mysql-bin.log',^C
+mysql> CHANGE MASTER TO
+    -> MASTER_HOST='35.229.123.182',
+    -> MASTER_USER='replica_user',
+    -> MASTER_PASSWORD='random12345',
+    -> MASTER_LOG_FILE='/var/log/mysql/mysql-bin.log',
+    -> MASTER_LOG_POS=154;
+Query OK, 0 rows affected, 2 warnings (0.26 sec)
+
+mysql> exit
+Bye
+ubuntu@1469-web-02:~$ mysql -h source < fulldb.dump
+-bash: fulldb.dump: No such file or directory
+ubuntu@1469-web-02:~$ ls
+0-block_all_incoming_traffic_but    100-port_forwarding   mysql-apt-config_0.8.12-1_all.deb
+0-block_all_incoming_traffic_but.1  3-redirection         temp_mysql_v
+0-custom_http_response_header       4-not_found_page_404
+0-setup_web_static.sh               dbdump.db
+ubuntu@1469-web-02:~$ sudo mysql < dbdump.db 
+ubuntu@1469-web-02:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> STOP SLAVE;
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+mysql> Start SLAVE;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| tyrell_corp        |
++--------------------+
+5 rows in set (0.05 sec)
+
+mysql> exit
+Bye
+ubuntu@1469-web-02:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 15
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| testdb             |
+| tyrell_corp        |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> exit
+Bye
+ubuntu@1469-web-02:~$ 
+
+                web one
+
+elias@elias-Satellite-C655:~/alx-system_engineering-devops/0x14-mysql$ ssh -i ~/.ssh/alx_id_rsa ubuntu@35.229.123.182
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.11.0-1020-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Apr  6 18:27:41 UTC 2022
+
+  System load:  0.02              Processes:             112
+  Usage of /:   39.8% of 9.52GB   Users logged in:       1
+  Memory usage: 67%               IPv4 address for ens4: 10.10.255.20
+  Swap usage:   0%
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+3 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+Last login: Wed Apr  6 18:26:15 2022 from 196.191.52.121
+ubuntu@1469-web-01:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 59
+Server version: 5.7.37-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>  SHOW MASTER STATUS;
++------------------+----------+--------------+------------------+-------------------+
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
++------------------+----------+--------------+------------------+-------------------+
+| mysql-bin.000001 |      154 |              |                  |                   |
++------------------+----------+--------------+------------------+-------------------+
+1 row in set (0.09 sec)
+
+mysql> exit
+Bye
+ubuntu@1469-web-01:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 63
+Server version: 5.7.37-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database testdb;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> show databases:
+    -> ^C
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| testdb             |
+| tyrell_corp        |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> 
