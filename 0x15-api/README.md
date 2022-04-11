@@ -16,5 +16,14 @@ This projects deals with getting data from an API and manipulating the type of d
 
 ## Authors :black_nib:
 
-- [Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
+## :enter_belu: 
+* **elias fiseha** - [malu17](https://github.com/malu17)
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow)](https://twitter.com/eliasfiseha1)
+
+
+## 2021_2022
+## :mega: Acknowledgments
+
+* alx School (providing guidance)
+[Elias fiseha]|[Twitter](https://twitter.com/eliasfiseha1) | [GitHub](https://github.com/malu17)
