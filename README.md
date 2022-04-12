@@ -95,7 +95,12 @@ project directory]
 1. [0x0D-load_balancer](./0x0F-load_balancer)
 1. [0x10-https_ssl](./0x10-https_ssl)
 1. [0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter)
-    ## ## :enter_belu: 
+1. [0x12-web_stack_debugging_2](./0x12-web_stack_debugging_2)
+1. [0x13-firewall](./0x13-firewall)
+1. [0x14-mysql](./0x14-mysql)
+
+## Authors :black_nib:
+    ## :enter_belu: 
 * **elias fiseha** - [malu17](https://github.com/malu17)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow)](https://twitter.com/eliasfiseha1)
