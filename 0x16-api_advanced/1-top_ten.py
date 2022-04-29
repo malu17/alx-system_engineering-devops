@@ -25,3 +25,4 @@ def top_ten(subreddit):
 
         for posts in post_list[0:10]:
             print(posts['data']['title'])
+d
