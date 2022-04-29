@@ -24,4 +24,3 @@ def number_of_subscribers(subreddit):
     page_data = page_list[0]['data']
 
     return page_data['subreddit_subscribers']
-0
