@@ -80,11 +80,12 @@ project directory]
 ```
 
 ## Projects
-
+   ## Trimester 1:
 1. [0x00-shell_basics](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x00-shell_basics)
 1. [0x01-shell_permissions](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x01-shell_permissions)
 1. [0x02-shell_redirections](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x02-shell_redirections)
 1. [0x03-shell_variables_expansions](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x03-shell_variables_expansions)
+    ## Trimester 2:
 1. [0x04-loops_conditions_and_parsing](https://github.com/malu17/alx-system_engineering-devops/tree/main.0x04-loops_conditions_and_parsing)
 1. [0x05-processes_and_signals](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x05-processes_and_signals)
 1. [0x06-regular_expressions](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x06-regular_expressions)
@@ -93,6 +94,7 @@ project directory]
 1. [Command line for the win](https://github.com/malu17/alx-system_engineering-devops/tree/main./command_line_for_the_win)
 1. [0x08-web_stack_debugging_0](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x08-web_stack_debugging_0)
 1. [0x09-web_infrastructure_design](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x09-web_infrastructure_design)
+   ## Trimester 3
 1. [0x0A-configuration_management](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x0A-configuration_management)
 1. [0x0B-ssh](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x0A-ssh)
 1. [0x0C-web_server](https://github.com/malu17/alx-system_engineering-devops/tree/main./0x0B-web_server)
